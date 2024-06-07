@@ -5,11 +5,6 @@ body {
     background-color: #f0f0f0;
 }
 
-@media (max-width: 768px) {
-    .left-section {
-        height: 200px; 
-    }
-}
 
 .left-section {
     background: url('image1.jpg') no-repeat center center;
