@@ -4,96 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="registration.css">
 </head>
 <body>
-    <div class="container">
-        <div class="left-section">
-            <div class="register-now">
-                <h1>REGISTER NOW</h1>
-                <p>while seats are available!</p>
+    <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+        <div class="row w-100">
+            <div class="col-md-4 left-section text-center d-flex align-items-center justify-content-center">
+                <div class="register-now text-white">
+                    <h1>REGISTER NOW</h1>
+                    <p>while seats are available!</p>
+                </div>
             </div>
-        </div>
-        <div class="right-section">
-            <form>
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-            <input type="text" id="full-name" name="full-name" required>
-
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>  
-                </div>
-               
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" id="dob" name="dob" required>
-                </div>
-                <div class="form-group">
-                    <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
-                <option value="uk">United Kingdom</option>
-                <option value="au">Australia</option>
-                <option value="other">Other</option>
-            </select>
-                </div>
-                <div class="form-group">
-                    <label for="payment-mode">Gender</label>
-                    <div class="gender-options">
-                        <input type="radio" id="male" name="gender" value="male" required>
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" name="gender" value="female" required>
-                        <label for="female">Female</label>
-                        <input type="radio" id="other" name="gender" value="other" required>
-                        <label for="other">Other</label>
+            <div class="col-md-8 right-section p-5">
+                <form>
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" class="form-control" id="full-name" name="full-name" required>
                     </div>
-                    <label>Hobbies</label>
-            <div class="hobbies-options">
-                <input type="checkbox" id="reading" name="hobbies" value="reading">
-                <label for="reading">Reading</label>
-                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
-                <label for="traveling">Traveling</label>
-                <input type="checkbox" id="cooking" name="hobbies" value="cooking">
-                <label for="cooking">Cooking</label>
-                <input type="checkbox" id="other-hobby" name="hobbies" value="other">
-                <label for="other-hobby">Other</label>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select class="form-control" id="country" name="country">
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="male" name="gender" value="male" required>
+                            <label for="male" class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="female" name="gender" value="female" required>
+                            <label for="female" class="form-check-label">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="other" name="gender" value="other" required>
+                            <label for="other" class="form-check-label">Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Hobbies</label>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="reading" name="hobbies" value="reading">
+                            <label for="reading" class="form-check-label">Reading</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="traveling" name="hobbies" value="traveling">
+                            <label for="traveling" class="form-check-label">Traveling</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="cooking" name="hobbies" value="cooking">
+                            <label for="cooking" class="form-check-label">Cooking</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="other-hobby" name="hobbies" value="other">
+                            <label for="other-hobby" class="form-check-label">Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-picture">Profile Picture</label>
+                        <input type="file" class="form-control-file" id="profile-picture" name="profile-picture">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea class="form-control" id="bio" name="bio"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                        <label for="terms" class="form-check-label">Agree to Terms and Conditions</label>
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                    </div>
+                </form>
             </div>
-                </div>
-                <div class="form-group">
-                    <label for="profile-picture">Profile Picture</label>
-            <input type="file" id="profile-picture" name="profile-picture">
-                </div>
-                <div class="form-group">
-                    <label for="bio">Bio</label>
-                    <textarea id="bio" name="bio"></textarea>
-                </div>
-                
-                    <div class="agree">
-                        <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms" class="inline">Agree to Terms and Conditions</label>
-                    </div>
-                    <div class="form-buttons">                
-                         <button type="submit">Submit</button>
-                    <button type="reset">Reset</button></div>
-                </div>
-            </form>
         </div>
     </div>
 </body>
