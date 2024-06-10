@@ -44,14 +44,18 @@
 </body>
 <script>
     function submitForm() {
-        var formData = {
-            username: document.getElementById("username").value,
-            password: document.getElementById("password").value,
-            rememberMe: document.getElementById("remember").checked
-        };
+            var username = document.getElementsByClassName("form-control")[0].value;
+            var password = document.getElementsByClassName("form-control")[1].value;
+            var rememberMe = document.getElementById("remember").checked;
 
-        console.log("Form Data:");
-        console.log(formData);
+            var formData = {
+                username: username,
+                password: password,
+                rememberMe: rememberMe
+            };
+
+            console.log("Form Data:");
+            console.log(formData);
     }
 </script>
 </html>
