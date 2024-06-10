@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-md-8 right-section p-5">
-                <form>
+                <form id="registrationForm">
                     <div class="form-group">
                         <label for="full-name">Full Name</label>
                         <input type="text" class="form-control" id="full-name" name="full-name" required>
@@ -106,7 +106,7 @@
                         <label for="terms" class="form-check-label">Agree to Terms and Conditions</label>
                     </div>
                     <div class="form-group text-right">
-                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="button" class="btn btn-success" onclick="submitForm()">Submit</button>
                         <button type="reset" class="btn btn-danger">Reset</button>
                     </div>
                 </form>
@@ -114,4 +114,5 @@
         </div>
     </div>
 </body>
+<script src="registration.js"></script>
 </html>
