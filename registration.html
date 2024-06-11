@@ -107,9 +107,30 @@
                     </div>
                     <div class="form-group text-right">
                         <button type="button" class="btn btn-success" onclick="submitForm()">Submit</button>
-                        <button type="reset" class="btn btn-danger">Reset</button>
+                        <button type="reset" class="btn btn-danger" onclick="resetForm()">Reset</button>
                     </div>
                 </form>
+                <div id="formDataDisplay" class="mt-5">
+                    <table id="formDataTable" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Username</th>
+                                <th>Password</th>
+                                <th>Confirm Password</th>
+                                <th>Email Address</th>
+                                <th>Phone Number</th>
+                                <th>Date of Birth</th>
+                                <th>Country</th>
+                                <th>Gender</th>
+                                <th>Hobbies</th>
+                                <th>Bio</th>
+                                <th>Agreed Terms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
             </div>
         </div>
     </div>
