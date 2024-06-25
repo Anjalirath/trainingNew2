@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {Grid, TextField, Button, FormControl, FormLabel, RadioGroup, FormControlLabel, Radio, Checkbox, FormGroup, MenuItem, Typography, Box,} from '@mui/material';
+import { Link } from "react-router-dom";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -131,9 +132,12 @@ const RegistrationForm = () => {
               <TextField label="Bio" multiline rows={4} name="bio" value={formData.bio} onChange={handleChange} />
             </FormControl>
             <FormControlLabel control={<Checkbox checked={formData.terms} onChange={handleChange} name="terms" />} label="Agree to Terms and Conditions" />
-            <Box mt={3}>
+            <Box mt={4}>
               <Button variant="contained" color="primary" onClick={handleSubmit}>Submit</Button>
               <Button variant="contained" color="secondary" onClick={resetForm}>Reset</Button>
+              <Link to="/login">
+              <Button variant="contained" color="primary">LogIN</Button>
+              </Link>
             </Box>
           </form>
           </Grid>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {Grid, TextField, Button,FormControl, FormControlLabel, Checkbox, Typography, Box } from '@mui/material';
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({
@@ -55,6 +56,9 @@ const Login = () => {
             />
             <Box mt={3}>
               <Button variant="contained" color="primary" onClick={handleSubmit}>Login</Button>
+              <Link to="/registration">
+              <Button variant="contained" color="secondary">Registration Form</Button>
+              </Link>
             </Box>
           </form>
         </Grid>
