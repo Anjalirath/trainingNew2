@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 import RegistrationForm from './components/RegistrationForm';
 import Login from "./components/Login";
-// import Login from './components/Login';
 
 // import Car from './components/Car';
 // import PlusMinus from './components/PlusMinus';
