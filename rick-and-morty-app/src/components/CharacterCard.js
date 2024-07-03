@@ -27,6 +27,9 @@ const CharacterCard = ({ character }) => {
         <Typography variant="body2" color="textSecondary" component="p">
           Origin: {character.origin.name}
         </Typography>
+        <Typography variant="body2" color="textSecondary" component="p">
+        Last Location: {character.location.name}
+        </Typography>
       </CardContent>
     </Card>
   );
